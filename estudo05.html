@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Adding stuffs</title>
+    <style>
+
+        body {
+
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div#container {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8E07C0;
+
+        }
+
+        div#white_square {
+
+            background-color: white;
+            padding: 40px;
+
+        }
+
+        div#aftermath {
+
+            display: flex;
+            background-color: #8E07C0;
+            color: white;
+            border: 1px solid;
+            border-radius: 10px;
+            height: 19px;
+            width: 60px;
+            margin-top: 5px;
+            margin-left: 126px;
+            padding: 3px;
+            font-style: italic;
+            justify-content: center;
+            transition: .1s linear;
+
+        }
+
+        div#foot {
+
+            display:flex;
+            margin: 5px;
+
+        }
+
+        input {
+        
+            outline: none;
+            width: 50px;
+            padding: 3px;
+            margin: 10px;
+            border-radius: 10px;
+            color: #8E07C0;
+            font-style: italic;
+            border: 1px solid;
+            text-align: center;
+
+        }
+
+        input.number01 {
+
+            margin-left: 120px;
+
+        }
+
+        /* Taking off the increase/decrease button inside input */
+        input[type = number]::-webkit-inner-spin-button,
+            input[type = number]::-webkit-outer-spin-button {-webkit-appearance: none;}
+
+        label {
+
+            font-size: large;
+            color: #8E07C0;
+        }
+
+        h2 {
+
+            color: #666262;
+
+        }
+
+        div#add_icon {
+
+            margin-left: 266px;
+            margin-top: -5px;
+            margin-bottom: -5px;
+            color:#8E07C0;
+            font-size: 20px;
+            
+            }
+
+        input#button {
+
+            margin: 5px;
+            padding: 5px;
+            width: 100px;
+            background-color: #8E07C0;
+            color: white;
+            border: 1px solid;
+            transition: .1s linear;
+
+        }
+
+        /* EFFECTS */
+        input#button:hover {
+
+            background-color: white;
+            color:#8E07C0;
+
+        }
+
+        div#aftermath:hover {
+
+            background-color: white;
+            color:#8E07C0
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div id = "container">
+        
+        <div id = "white_square">
+
+            <h1>Adding numbers, cuz is cool!</h1>
+            <h2>Let's add some numbers?</h2>
+            <label>Type a number</label>
+            <input id = "num01" class = "number01" type = "number" />
+            <p>
+            <div id = "add_icon"><strong>+</strong></div>
+            <label>Type another number please</label>
+            <input id = "num02" class = "number02" type = "number" />
+            <p>
+            <div id = "foot">
+
+                <input id = "button" type = "button" value = "ADD NOW" onclick = "adding()" />
+                <div id = "aftermath"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function adding() {
+
+            let number1 = Number(window.document.querySelector('input#num01').value)
+            let number2 = Number(window.document.querySelector('input#num02').value)
+            window.document.querySelector('div#aftermath').innerHTML = `${number1 + number2}`
+
+        }
+
+    </script>
+
+</body>
+
+</html>

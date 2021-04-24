@@ -1,0 +1,94 @@
+body { 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1396d3;
+
+}
+
+ h1, footer {
+
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.568);
+
+ }
+
+section {
+
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.568);
+
+}
+
+div#result {
+
+    background-color: #1396d3;
+
+}
+
+input {
+
+    outline: none;
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #cecece;
+
+}
+
+input:hover {
+
+    border: 1px solid #1396d3;
+    
+}
+
+input#btn {
+
+    height: 25px;
+    width: 55px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 1px solid #18cdec;
+    background-color: #1396d3;
+    font-size: 9pt;
+    font-weight: 300;
+    color: white;
+    transition: ease 0.3s;
+    cursor: pointer;
+
+}
+
+input#btn:hover {
+
+    background-color: white;
+    color:#1396d3;
+
+}
+
+/* Taking off the increase/decrease button inside input */
+input[ type = number ]::-webkit-inner-spin-button,
+input[ type = number ]::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+footer {
+
+    font-style: italic;
+
+}
+
+footer a {
+
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+
+}
