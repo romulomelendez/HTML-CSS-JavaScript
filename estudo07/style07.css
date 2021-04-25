@@ -22,7 +22,8 @@ body {
 section {
 
     border-radius: 10px;
-    width: 500px;
+    max-width: 600px;
+    width: 400px;
     padding: 15px;
     margin: auto;
     background: #ffffff;
@@ -32,7 +33,9 @@ section {
 
 div#result {
 
-    background-color: #1396d3;
+    border-radius: 20px;
+    background-color: #f1ececb0;
+    padding: 15px;
 
 }
 
@@ -43,6 +46,7 @@ input {
     width: 50px;
     border-radius: 10px;
     border: 1px solid #cecece;
+    color: #1396d3;
 
 }
 
@@ -60,9 +64,8 @@ input#btn {
     border-radius: 15px;
     border: 1px solid #18cdec;
     background-color: #1396d3;
-    font-size: 9pt;
-    font-weight: 300;
     color: white;
+    font-size: 9pt;
     transition: ease 0.3s;
     cursor: pointer;
 
