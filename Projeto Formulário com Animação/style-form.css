@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #71038D;
+
+}
+
+div#interface {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+    background-color: #121214;
+
+}
+
+div#interface div {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202024;
+    margin: 30px;
+    padding: 64px;
+    border-radius: 8px;
+    animation-name: fade;
+    animation-duration: 0.7s;
+
+}
+
+div#sobrepor_Prof, #sobrepor_Aluno {
+
+    padding: 10px;
+    transition: all 0.3s ease;
+
+}
+
+div#sobrepor_Aluno:hover, #sobrepor_Prof:hover {
+        
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    border: 3px solid #71038D
+
+}
+
+a {
+
+    font-size: 10pt;
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    color: #71038D
+    
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: fade;
+    animation-duration: 0.7s;
+    
+}
+
+form input{
+
+    margin: 20px;
+    padding: 12px;
+    color: rgb(113, 3, 141);
+    width: 300px;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 11pt;
+    border: none;
+    animation-name: fade;
+    animation-duration: 0.7s;
+    border-radius: 5px;
+
+}
+
+form button {
+
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    padding: 12px;
+    background-color: #71038d;
+    color: #ffffff;
+    font-size: 11pt;
+    border: none;
+    animation-name: fade;
+    animation-duration: 0.7s;
+    transition: all 0.1s;   
+
+}
+
+form button:hover {
+
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+    
+}
+
+
+@keyframes fade {
+
+    from {
+
+        opacity: 0;
+        transform: scale(0.9);
+
+    } to {
+
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+textarea:focus, input:focus, select:focus {
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+} 
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+	<head>
+
+		<title>LAMPADA</title>
+		<meta charset = "UTF-8"></meta>
+
+	</head>
+
+	<body>
+
+		<h1>Acenda a Lâmpada</h1>
+		<img src = "./foto_lamp/lampada-apagada.jpg" id = "luz" onclick = "quebraLampada()" onmousemove = "acendeLampada()" onmouseout = "apagaLampada()"onclick = "quebraLampada()" onclick = "quebraLampada()" />
+	
+		<script>
+
+			function acendeLampada() {
+
+				document.getElementById("luz").src = "./foto_lamp/lampada-acesa.jpg"; 
+			}
+			
+			function apagaLampada() {
+			
+				document.getElementById("luz").src = "./foto_lamp/lampada-apagada.jpg";
+			}
+			
+			function quebraLampada() {
+
+				document.getElementById("luz").src = "./foto_lamp/lampada-quebrada.jpg";
+
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manjari:700&display=swap');
+
+body{
+	
+	margin: 0;
+    background-color: black;
+	
+}
+section#corpo{
+	
+	position: relative;
+	
+	
+}
+.img01 { 
+
+	position: relative;
+	background: url(../_fotos/img01.jpeg) no-repeat;
+	background-size: 100% 1000px;
+	background-attachment: fixed;
+	width: 100%;
+	height: 1000px;
+	top: 25px;
+	transition: opacity 1s;
+	
+}
+
+.img01:hover {
+	
+	opacity: 0.4;
+	
+}
+
+.img01 h1{
+	
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 200px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150pt;
+	margin-top: 50px;
+	opacity: 0;
+	transition: opacity 1s;
+	 
+}
+
+.img01 h1:hover {
+	
+	opacity: 1;
+	
+}
+
+.img02 {
+	
+	position: relative;
+	background: url(../_fotos/img02.jpeg) no-repeat;
+	background-size: 100% 1000px;
+	background-attachment: scroll;
+	width: 100%;
+	height: 1000px;
+	
+}
+
+.img03 {
+	
+	position: relative;
+	background: url(../_fotos/img04.jpeg) no-repeat;
+	background-size: 100% 900px;
+	background-attachment: fixed;
+	width: 100%;
+	height: 1500px;
+	
+}
+.faixa {
+
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: #ffcccc;
+}
+
+.faixa h1{
+	
+	position: absolute;
+	top: 30px;
+	left: 415px;
+	font-family: 'Manjari', sans-serif;
+	font-size: 50pt;
+	color: crimson;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.faixa h1:hover {
+	
+	opacity: 1;
+	
+}
+
+#texto02 {
+
+	margin-left: -120px;
+}
+
+/*FORMATAÇÃO DO MENU*/
+
+header#cabecalho {
+	
+	position: absolute;
+	
+}
+
+div#logo-menu img{
+	
+	position: absolute;
+	width: 200px;
+	top: 4px;
+	margin-left: 100px;
+	
+}
+
+.efeito{
+	
+	position: relative;
+	font-size: 24px;
+	line-height: 70px;
+	margin-top: -18.6px;
+	width:100px;
+	text-align: center;
+	border: 2px;
+	cursor: pointer;
+	color:crimson;
+	background:white;
+	transition: all 400ms ease;
+	
+}
+
+.efeito:hover {
+	
+	color:white;
+	background:crimson;
+	box-shadow: inset 0 0 0 2px green;
+}
+
+
+nav#menu{
+
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 76px;
+    background-color: white;
+    /*background-color: #216ae2;*/
+
+}
+
+nav#menu a{
+	
+	position: relative;
+	top: 0px;
+    text-decoration: none;
+    font-family: 'Manjari', sans-serif;
+	
+}
+
+nav#menu ul{
+
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -83px;
+    left: 300px;
+	
+}
+nav#menu li{
+
+	background-color: white;
+	position: relative;
+    display: inline-block;
+    padding: 18.5px;
+    margin: 80px;
+	top: -13px;
+	height: 32px;
+
+}
+
