@@ -11,7 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #852364;
+    height: 100vh;
+    background-color: #4e173c;
     color: white;
 
 }
