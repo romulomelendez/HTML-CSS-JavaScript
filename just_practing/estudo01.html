@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Estudos com o DOM</title>
+
+</head>
+
+<body>
+
+        <h1 class = "teste">Iniciando estudos com o DOM!</h1>
+        <p>Rômulo Melendez Lima</p>
+        <p>MOJO</p>
+        <div id = "msg">Isto é um exemplo de uma div na cor azul :0</div>
+        <div class = "msg2">Isto é um exemplo de uma div na cor vermelha ;)</div>
+
+    <script>
+    
+        var p1 = window.document.getElementsByTagName("p")[0]
+        var p2 = window.document.getElementsByTagName("p")[1]
+
+        window.document.write("Parágrafo 1: " + p1.innerText)
+        window.document.write("</br>")                                      //quebra de linha
+        window.document.write("Parágrafo 2: " + p2.innerText)
+        window.document.write("</br>")                                     //quebra de linha
+        window.document.querySelector('div#msg').style.background = "lightblue"
+        window.document.querySelector('div.msg2').style.background = 'red'
+      
+
+    </script>
+
+</body>
+
+</html>

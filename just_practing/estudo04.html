@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Conditions part 2</title>
+
+    <style>
+
+        body {
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div><h2 id = "dia">O dia da semana é: </h2></div>
+
+    <script>
+
+        var dia = window.document.getElementById('dia')
+        var diaHoje = new Date().getDay()
+
+        switch( diaHoje ) {
+
+            case 0:
+
+                dia.innerHTML = "Domingo"
+                break
+
+            case 1:
+
+                dia.innerHTML = "Segunda-feira"
+                break
+            case 2: 
+
+                dia.innerHTML = "Terça-feira"
+                break
+
+            case 3: 
+
+                dia.innerHTML = "Quarta-feira"
+                break
+
+            case 4: 
+
+                dia.innerHTML = "Quinta-feira"
+                break
+
+            case 5: 
+
+                dia.innerHTML = "Sexta-feira"
+                break
+
+            case 6: 
+
+                dia.innerHTML = "Sábado"
+                break
+
+            default:
+                
+                alert(diaHoje)
+
+        }
+
+    </script>
+
+</body>
+
+</html>
