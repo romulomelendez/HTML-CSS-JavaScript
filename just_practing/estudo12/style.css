@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
  
 }
 
@@ -19,10 +22,11 @@ body {
 div {
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 800px;
     height: 100vh;
-    background-color: #0c0c3d;
 
 }
 
@@ -42,19 +46,21 @@ form {
 
 input {
 
+    outline: none;
     border-radius: 15px;
-    border:  0.5px;
-    margin: 10px;
+    border:  2px solid #0c0c3d;
+    color: #111138;
+    font-weight: 600;
+    margin: auto 10px auto 10px;
     padding: 14px;
 
 }
+input#estado { width: 60px; }
 
-input#ddd {
+input#ddd { width: 60px; }
 
-    width: 60px;
-
-}
+input#numero { width: 80px; }
 
 /* Taking off the increase/decrease button inside input */
 input[type = number]::-webkit-inner-spin-button,
-input[type = number]::-webkit-outer-spin-button {-webkit-appearance: none; }
+input[type = number]::-webkit-outer-spin-button { -webkit-appearance: none; }
