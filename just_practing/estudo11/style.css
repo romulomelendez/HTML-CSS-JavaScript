@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&display=swap');
+
 * {
 
     margin: 0;
@@ -9,10 +11,50 @@
 body {
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #4e173c;
+    background-color: #160050;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+}
+
+div {
+
+    width: 400px;
+    height: 400px;
+
+}
+
+div#containerClock {
+    
+    background-color: #1c0666;
+
+}
+
+section {
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+section#contentSection { margin-top: 10px; }
+
+button {
+
+    margin: 15px 150px;
+    width: 100px;
+    padding: 6px;
+    border-radius: 20px;
+    border: 1px solid #1153e0;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1c0666;
+    color: white;
+    cursor: pointer;
 
 }
