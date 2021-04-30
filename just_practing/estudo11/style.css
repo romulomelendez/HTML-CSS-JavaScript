@@ -29,11 +29,20 @@ div {
 
 }
 
-div#containerClock {
+div#containerImages {
     
-    background-color: #1c0666;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
 }
+div#containerClock {
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+div#containerClock { background-color: #1c0666; }
 
 section {
     
