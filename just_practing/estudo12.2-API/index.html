@@ -16,15 +16,25 @@
 
     <header>
 
-        <h1 id = "tittle">Press the button to see some Chuck Norris Facts</h1>
+        <h1 id = "tittle">Chuck Norris Facts</h1>
 
     </header>
     
-    <section>
+    <section class = "texts">
         
         <img id = "icon">
+        <h2 id = "chooses">Choose your category below</h2>
         <h2 id = "cnFact"></h2>
-        <button id = "btn" onclick = "askFact(), changeButtonContent(), hideTittle()">PRESS</button>
+        <!--<button id = "btn" onclick = "askFact(), changeButtonContent(), hideTittle()">PRESS</button>-->
+    
+    </section>
+
+    <section class = "categories">
+            
+        <a class = "cardCategory" href = "#" onclick = "askFact('animal'), hide()">ANIMAL</a>
+        <a class = "cardCategory" href = "#" onclick = "askFact('career'), hide()">CAREER</a>
+        <a class = "cardCategory" href = "#" onclick = "askFact('celebrity'), hide()">CELEBRITY</a>
+        <a class = "cardCategory" href = "#" onclick = "askFact('dev'), hide()">DEV</a>
     
     </section>
 

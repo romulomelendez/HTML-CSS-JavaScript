@@ -1,10 +1,12 @@
 'use strict'
 
-const askFact = async () => {
+const askFact = async (category) => {
 
-    const url = `https://api.chucknorris.io/jokes/random`
+    //const url = `https://api.chucknorris.io/jokes/random`             URL without categories
+    const url = `https://api.chucknorris.io/jokes/random?category=${category}`
     const data = await fetch(url)
     const fact = await data.json()
+    console.log(category)
     console.log(fact)
     showFact(fact)
 
@@ -17,7 +19,12 @@ const showFact = (fact) => {
 
 }
 
-const changeButtonContent = () => window.document.querySelector('button#btn').innerText = 'Another fact ? Just press!'
+//const changeButtonContent = () => window.document.querySelector('button#btn').innerText = 'Another fact ? Just press!'        Function to change the button context, but I'm not using this button right now!
 
-const hideTittle = () => window.document.querySelector('h1#tittle').style.display = 'none'
+const hide = () => {
+    
+    window.document.querySelector('h1#tittle').style.display = 'none'
+    window.document.querySelector('h2#chooses').style.display = 'none'
+    window.document.querySelector('section.categories').style.display = 'none'
 
+}
