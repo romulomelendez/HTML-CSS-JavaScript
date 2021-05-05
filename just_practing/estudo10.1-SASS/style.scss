@@ -1,0 +1,32 @@
+$myFont: 'Krona One', sans-serif;
+$bodyColor: black;
+$textColor: white;
+
+@mixin resetPage {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@mixin bodySettings {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $bodyColor;
+    font-family: $myFont;
+
+}
+
+* { @include resetPage; }
+
+body {
+
+    @include bodySettings;
+
+    h1 { color: $textColor; }
+    
+}
