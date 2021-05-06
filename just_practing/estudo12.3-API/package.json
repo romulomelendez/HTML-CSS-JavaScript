@@ -1,0 +1,14 @@
+{
+  "name": "estudo12.3-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "node-static": "^0.7.11"
+  },
+  "author": "romulo",
+  "license": "ISC"
+}
