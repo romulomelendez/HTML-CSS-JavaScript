@@ -7,6 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "newsapi": "^2.4.1",
     "node-static": "^0.7.11"
   },
   "author": "romulo",

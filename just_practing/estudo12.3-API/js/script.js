@@ -1,22 +1,17 @@
 
-const pickTheNews = async () => {
+    const NewsAPI = require('newsapi')
+    const newsapi = new NewsAPI('f3202755b11646868149a350609b4965')
 
-    const url = `http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia`
-    const data = await fetch(url)
-    const news = await data.json()
-    console.log(news)
-    showNews(news) 
+    newsapi.v2.topHeadlines({
 
-}
+        sources: 'bbc-news,the-verge',
+        q: 'bitcoin',
+        category: 'business',
+        language: 'en',
+        country: 'us'
 
-pickTheNews()
+    }).then(response => {
 
-const showNews = (news) => {
-    
-    console.log(news.items[0])
-    window.document.querySelector('h2#title').innerText = news.items[0].titulo
-    let img = window.document.querySelector('img#image').src = news.items[0].imagens
-    console.log(img)
-}
-
-//  images\/agenciadenoticias\/estatisticas_sociais\/2021_05\/PNS_Violencia_HOME_Jos-Fernando-Ogura-AEN.jpg
+        console.log(response)
+  
+    });
