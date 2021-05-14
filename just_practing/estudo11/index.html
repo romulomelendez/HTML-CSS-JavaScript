@@ -8,6 +8,9 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <link href = "style.css" rel = "stylesheet">
+        <!--IMPORTING ORBITRON FONT FOR THE DIGITAL CLOCK-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@458&display=swap" rel="stylesheet">
 
     </head>
 
@@ -17,18 +20,19 @@
         <section id = "contentSection">
 
             <div id = "containerImages"></div>
-            <div id = "containerClock"></div>            
+            <div id = "containerClock"><h1 class = "hours"></h1></div>            
 
         </section>
 
         <section id = "btnSection">
 
             <button id = "btnSlider" onclick = "stopSlider()">Play/Stop</button>
-            <button id = "btnClock" onclick = "stopClock()">Stop Clock</button>
+            <button id = "btnClock" onclick = "stopClock()">Play/Stop</button>
 
         </section>
 
-        <script src = "script.js"></script>
+        <script src = "./scripts/slider.js"></script>
+        <script src = "./scripts/clock.js"></script>
     
     </body>
 

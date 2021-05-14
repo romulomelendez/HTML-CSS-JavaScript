@@ -42,5 +42,3 @@ const stopSlider = () => {
     window.document.getElementById('btnSlider').setAttribute("onclick", "playSlider()")
 
 }
-
-const stopClock = () => alert('Ainda vou implementar rs, CALMA!')

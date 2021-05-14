@@ -37,12 +37,21 @@ div#containerImages {
 }
 div#containerClock {
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: #1c0666;
 
 }
 
-div#containerClock { background-color: #1c0666; }
+div#containerClock h1 {
+
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 45pt;
+}
 
 section {
     
