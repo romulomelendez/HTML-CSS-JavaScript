@@ -1,6 +1,5 @@
-'use strict'
 
-const pesquisarCEP = async() => {   
+const pesquisarCEP = async () => {   
 
     const cep = window.document.querySelector('input#cep').value
     const url = `http://viacep.com.br/ws/${cep}/json/`
@@ -11,7 +10,7 @@ const pesquisarCEP = async() => {
 
 }
 
-const preencherForm = (ende) => {
+const preencherForm = ( ende ) => {
 
     window.document.querySelector('input#endereco').value = ende.logradouro
     window.document.querySelector('input#bairro').value = ende.bairro

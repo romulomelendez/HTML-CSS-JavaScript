@@ -1,0 +1,122 @@
+
+//  VARIABLES
+$myFont: 'Krona One', sans-serif;
+$bodyColor: #0e1b30;
+$primaryColor: #d97732;
+$secundaryColor: #dea152;
+$footerColor: #0f274d;
+
+@mixin resetPage {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@mixin bodyDefaultSettings {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: $bodyColor;
+    font-family: $myFont;
+
+}
+
+* { @include resetPage }
+
+body {
+
+    @include bodyDefaultSettings;
+
+    header {
+
+        margin: 25px;
+
+        h1 {
+            
+            color: $primaryColor;
+            margin: 4px;
+        
+        }
+
+        h5 { color: $secundaryColor;}
+        
+    }
+
+    section {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 72vh;
+
+        button#select-image {
+
+            background-color: $primaryColor;
+            color: white;
+            border: 1px solid $secundaryColor;
+            border-radius: 5px;
+            padding: 12px;
+            margin: 15px;
+            height: 50px;
+            width: 400px;
+            cursor: pointer;
+            
+            input#image { display: none; }
+        
+        }
+
+        img#image-preview {
+
+            display: none;
+            max-height: 450px;
+            max-width: 450px;
+            background-color: $primaryColor;
+            margin: 10px;
+            padding: 5px;
+
+        }
+
+    }
+
+    footer {
+
+        display: flex;
+        align-items: center;
+        background-color: $footerColor;
+        margin-top: 5px;
+        padding: 10px;
+        height: 150px;
+        width: 100%;
+
+        div#social-medias {
+
+            margin: 10px;
+
+            a {
+    
+                color: white;
+                text-decoration: none;
+                margin: 5px;
+    
+            }
+
+        }
+
+        p {
+
+            display: flex;
+            flex-direction: column;
+            font-size: 10pt;
+            color: white;
+            margin: 10px;
+        
+        }
+
+    }
+
+}
