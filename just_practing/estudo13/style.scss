@@ -6,6 +6,7 @@ $primaryColor: #d97732;
 $secundaryColor: #dea152;
 $footerColor: #0f274d;
 
+
 @mixin resetPage {
 
     margin: 0;
@@ -97,12 +98,12 @@ body {
 
             margin: 10px;
 
-            a {
-    
-                color: white;
-                text-decoration: none;
-                margin: 5px;
-    
+                a {
+                    
+                    background-color: white;
+                    
+                }
+                
             }
 
         }

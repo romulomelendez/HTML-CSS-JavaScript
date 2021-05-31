@@ -63,7 +63,10 @@ body footer {
 body footer div#social-medias {
   margin: 10px;
 }
-body footer div#social-medias a {
+body footer div#social-medias i.fab fa-github {
+  font-size: 10pt;
+}
+body footer div#social-medias i.fab fa-github a {
   color: white;
   text-decoration: none;
   margin: 5px;
