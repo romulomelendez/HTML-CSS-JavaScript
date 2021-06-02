@@ -53,23 +53,24 @@ body section img#image-preview {
 }
 body footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #0f274d;
   margin-top: 5px;
   padding: 10px;
   height: 150px;
   width: 100%;
 }
-body footer div#social-medias {
+body footer div {
+  display: flex;
+}
+body footer div a {
+  display: flex;
+  flex-direction: row;
+  font-size: 20pt;
   margin: 10px;
-}
-body footer div#social-medias i.fab fa-github {
-  font-size: 10pt;
-}
-body footer div#social-medias i.fab fa-github a {
   color: white;
-  text-decoration: none;
-  margin: 5px;
 }
 body footer p {
   display: flex;
@@ -77,4 +78,8 @@ body footer p {
   font-size: 10pt;
   color: white;
   margin: 10px;
+}
+body footer p.unburden {
+  font-size: 8pt;
+  color: #ffffff27;
 }/*# sourceMappingURL=style.css.map */

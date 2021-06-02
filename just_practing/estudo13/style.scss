@@ -87,23 +87,27 @@ body {
     footer {
 
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         background-color: $footerColor;
         margin-top: 5px;
         padding: 10px;
         height: 150px;
         width: 100%;
 
-        div#social-medias {
+        div {
 
-            margin: 10px;
+            display: flex;
 
-                a {
-                    
-                    background-color: white;
-                    
-                }
+            a {
                 
+                display: flex;
+                flex-direction: row;
+                font-size: 20pt;
+                margin: 10px;
+                color: white;
+                    
             }
 
         }
@@ -117,6 +121,8 @@ body {
             margin: 10px;
         
         }
+
+        p.unburden { font-size: 8pt; color: #ffffff27;}
 
     }
 
