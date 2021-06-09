@@ -1,7 +1,6 @@
 
 const imageFile = window.document.querySelector('input#image')
 
-
 window.document.querySelector('button#select-image').addEventListener('click', () => {
     
     imageFile.click()
@@ -18,7 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
         reader.onload = ( event ) => {
 
             let image = window.document.querySelector('img#image-preview')
+            let modalContainer = window.document.querySelector('div#modal-container')
             image.style.display = 'initial'
+            modalContainer.style.display = 'initial'
             image.src = event.target.result
 
         }
@@ -26,3 +27,4 @@ window.addEventListener('DOMContentLoaded', () => {
     } )
 
 } )
+

@@ -43,14 +43,6 @@ body section button#select-image {
 body section button#select-image input#image {
   display: none;
 }
-body section img#image-preview {
-  display: none;
-  max-height: 450px;
-  max-width: 450px;
-  background-color: #d97732;
-  margin: 10px;
-  padding: 5px;
-}
 body footer {
   display: flex;
   flex-direction: column;
@@ -82,4 +74,43 @@ body footer p {
 body footer p.unburden {
   font-size: 8pt;
   color: #ffffff27;
+}
+body div#modal-container {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+body div#modal-container div#modal-container.show {
+  display: flex;
+}
+body div#modal-container div#modal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+body div#modal-container div#modal img#image-preview {
+  display: none;
+  max-height: 450px;
+  max-width: 450px;
+  background-color: #d97732;
+  margin: 10px;
+  padding: 5px;
+  z-index: 11;
+}
+body div#modal-container div#modal button {
+  padding: 5px;
+  margin: 5px 15px 5px 15px;
+  border-radius: 5px;
+  background-color: #d97732;
+  border: none;
+  color: #0e1b30;
+  font-weight: bold;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
